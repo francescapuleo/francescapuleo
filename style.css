@@ -1,0 +1,376 @@
+/* CSS Requirements
+1. Margin and Padding - 
+2. Font-Family - something other than default
+3. Width and/or height - if needed for images/block elements
+4. At least 5 other and different CSS style properties */
+
+body{
+    background-size: cover; /* to make image cover entire area */
+    background-repeat: no-repeat; /* no repeat*/
+    background-position: center; 
+    background-color: #CAE2BC;
+    width:100%;
+    margin:0; /* removes default margin*/
+    height:100%;
+}
+
+.navbar{
+   background-color:#DDE2C6; 
+   overflow:hidden;
+   background-color:#87A878;
+   width:fit-content;
+   padding:15px;
+   border-radius:6px;
+   font-family:'Courier New', Courier, monospace;
+   margin: auto;
+   margin-top:30px;
+   text-align:center;
+
+}
+.nav-list {
+    list-style-type: none;
+    display: flex; /* Makes the navbar horizontal by default */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+@media screen and (max-width: 700px) {
+    .nav-list {
+      flex-direction: column; /* Changes the navbar to vertical */
+      align-items: flex-start;
+    }
+  
+    .nav-list a {
+      margin: 10px 0; /* Adds spacing between vertical items */
+    }
+  }
+
+.navbar a {
+    color: black;
+    text-align:center;
+    font-size:larger;
+}
+.navbar a:hover{
+    transform:scale(1.05);
+    color:white;
+}
+
+.homeTitle {
+    font-family: 'Courier New', Courier, monospace;
+     /*style 1*/
+    background-color:#DDE2C6;
+    width:fit-content;
+    height:fit-content;
+    padding-right:15vh;
+    margin:20px;
+    border-radius:6px;
+    justify-content:center;
+    padding-top: 20px;
+    padding-left: 12rem;
+    height: 15rem; 
+    display:inline-block;
+    padding-bottom: 325px;
+    box-shadow: 2px 3px 3px 3px lightgray;
+    
+}
+.title{
+    background-color:#87A878;
+    padding:15px;
+    border-radius:6px;
+    width:fit-content;
+    justify-content:center;
+    font-weight:125;
+    
+
+}
+
+.sub-h{
+    font-weight:100;
+    margin-bottom:35px;
+}
+
+
+.sub-h:hover, .bio:hover {
+    transform: scale(1.01)
+}
+ .nav:hover{
+transform: scale(1.06)
+}
+
+.bio-link{
+    padding-top: 20rem;
+    background-color: #DDE2C6; /* style 2 */
+    margin-top:50px;
+    margin-left:20vh;
+    height:250px;
+    outline:3px solid #87A878; /*style 6*/
+    height:fit-content;
+    outline:3px solid #87A878;
+    border-radius:7px;
+    padding:10px;
+    margin-right:10vh;
+    width: 30%;
+    display:inline-block;
+
+}
+
+.bio-link{
+    text-align:center;
+    line-height:22px;
+}
+
+.me{
+    width:200px;
+    height:200px;
+    display:inline-block;
+}
+h1:hover{
+    opacity:80%; /* style 2*/
+    cursor:pointer; /* style 4*/
+    transform: scale (1.1); /* style 5*/
+
+}
+
+.resume-btn{
+    background-color: #AB947E;
+    border-radius:6px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:150;
+    font-size: 1.06em; /* 40px/16=2.5em */
+    padding:20px;
+    margin-top: 30px;
+    justify-content:center;
+    border: none;
+    text-decoration:none;
+    color:black;
+    
+    
+    
+}
+ .resume-btn:hover{
+    opacity:80%;
+    transform:scale(1.04);
+    
+ }
+
+/* #tree:hover, #success:hover, #guitar:hover{
+    transform: scale(1.07);
+    opacity:80%;
+    padding-right:200px;
+}    FIX LATER (makes links look wonky when hovering over image) */
+    
+
+.bio-link{ 
+    margin-bottom:none;
+    
+}
+
+
+/* .stripe{
+    margin-top:none;
+    background-color: rgb(247, 227, 198);
+    
+} */
+
+/* CSS FOR CONTACT HTML BELOW*/
+
+/* REQUIREMENTS for CSS
+    1. Margin and padding
+    2. Set width and height for block elements
+    3. border OR box-shadow AND border radius 
+        - around the paragraph that holds your contact information
+        - utilize padding and border-radius
+    4. At least 5 other different CSS style properties
+    5. Apply the 4 principles of Visual Design */
+
+  
+
+.title-contact{
+    width:300px;
+    height: 200px;
+     background-color:#87A878; /* style property 1 */
+    margin:20px ;
+    display:inline-block; /* style property 2 */
+    /* style property 3 */
+    border-radius:20px;
+    font-family: monospace; /* style property 4 */
+    justify-content:flex-end;
+    border-radius:6px;
+}
+#block-1{
+    padding:10px 20px 10px 20px;
+ 
+}
+.contact-top{
+     padding: 20px 0px 30px 30px;
+}
+
+.form-title{
+    text-decoration:underline; /* style property 5 */
+    font-family:'Courier New', Courier, monospace;
+    font-weight:200;
+}
+.contact-top{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:100;
+    padding:15px;
+    border-radius:6px;
+    width:fit-content;
+    justify-content:center;
+    font-weight:125;
+    
+}
+
+.contact-title{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:100;
+    background-color:#87A878;
+    padding:15px;
+    border-radius:6px;
+    width:fit-content;
+    font-weight:125;
+    
+}
+
+
+#block-2{
+    padding: 2% 5% 5% 5%; /* padding shorthand property 
+    (top, right, bottom, left) */
+    justify-content: center;
+    background-color:#87A878;
+    border-radius:10px;
+    margin:20px;
+    
+
+}
+#block-2, .title-contact{
+    display:inline-block;
+}
+.message{
+ justify-content:flex;
+ 
+
+}
+
+form{
+    margin-top:10px;
+    padding:none;
+    
+}
+
+.form-btn{
+    border:2px solid #AB947E;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.email{
+    text-align:center;
+    font-weight:100;
+}
+
+/* CSS FOR PROJECTS HTML BELOW*/
+
+/* PROJECTS CSS 
+Requirements:
+1. margin and padding
+2. Width and height
+at least 5 other and different CSS Style properties
+3. Include the 4 principles of visual design*/
+
+*{
+    box-sizing:border-box;
+}
+
+.proj-top{
+    padding: 20px 0px 30px 30px;
+}
+
+.proj-title{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:100;
+    background-color:#87A878;
+    padding:15px;
+    border-radius:6px;
+    width:fit-content;
+    justify-content:center;
+    font-weight:125;
+    
+    
+
+}
+
+.projects{
+    margin:20px;
+    display:inline-block;
+    width: 40%;
+}
+
+.row1, .row2{
+    background-color:#CDE5D7;  /* style property 1 */
+    display:flex; /* style property 2 */
+    margin-bottom: 50px;
+    border: 5px solid white; /* style property 3 */
+    border-radius:20px; /* style property 4 */
+    padding: 20px;
+    min-width:fit-content
+  
+
+}
+
+.proj-image:hover{
+    opacity:80%;
+    transform:scale(1.03);
+
+}
+
+.proj-image{
+        height:400px;
+        width:400px;
+        justify-content:center; /* style property 5 */
+        border:5px solid whitesmoke;
+        border-radius:20px;
+        margin:10px;
+        flex-wrap:wrap; 
+       object-fit:cover;
+    }
+
+
+    /* ABOUT PAGE CSS HERE */
+
+    .code{
+        width:300px;
+        height:300px;
+        
+       
+
+    }
+ 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        gap: 10px; /* space between grid items */
+        padding: 20px; 
+    }
+    
+    .left {
+        background-color: #DBEBC0; /* style property 1 */
+        padding: 20px;
+        text-align: center; /* style property 2 */
+        border: 1px solid green;  /* style property 3 */
+        border-radius: 10px; /* style property 4 */
+        box-shadow: 5px 5px 15px #DDE2C6;  /* style property 5 */
+
+    }
+   .about-1{
+    border: 1px solid green;
+    background-color:#DBEBC0;
+    border-radius:10px;
+    padding:15px;
+    
+
+   }
